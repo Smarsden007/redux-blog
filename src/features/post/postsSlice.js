@@ -5,10 +5,12 @@ const initialState = [
    { id: '2', title: 'Learning Reux Toolkit2',content: "I've heard good things2"}
 ]
 
-const postSlice = createSlice({
+const postsSlice = createSlice({
     name: 'posts',
     initialState,
     reducers: {}
 });
 
-export default postSlice.reducer
+
+export const selectAllPosts = (state) => state.posts;
+export default postsSlice.reducer
