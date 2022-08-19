@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { selectPostIds, getPostsStatus, getPostsError } from "./postsSlice";
 import PostsExcerpt from "./PostsExcerpt";
 import styled from "styled-components";
+import { RowCenter } from "../styles/GlobalStyles";
 
 const PostsList = () => {
 
@@ -11,6 +12,7 @@ const PostsList = () => {
     const PostFlex = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     `
     let content;
     if (postStatus === 'loading') {
@@ -22,9 +24,11 @@ const PostsList = () => {
     }
 
     return (
+        <RowCenter>
         <PostFlex>
             {content}
         </PostFlex>
+        </RowCenter>
     )
 }
 export default PostsList

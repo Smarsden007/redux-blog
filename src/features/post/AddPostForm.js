@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { FormContainer } from '../styles/GlobalStyles'
+import { FormContainer, RowCenter } from '../styles/GlobalStyles'
 
 import { addNewPost } from "./postsSlice";
 import { selectAllUsers } from "./../users/usersSlice";
@@ -52,7 +52,7 @@ const AddPostForm = () => {
     ))
 
     return (
-        <section>
+        <RowCenter>
             <FormContainer>
             <h2>Add a New Post</h2>
             <form>
@@ -83,7 +83,7 @@ const AddPostForm = () => {
                 >Save Post</button>
             </form>
             </FormContainer>
-        </section>
+        </RowCenter>
     )
 }
 export default AddPostForm
