@@ -11,12 +11,18 @@ const Header = () => {
     const HeaderLi= styled.li`
     font-family: monospace;
     font-size: 2rem;
-    
+    color: yellow;
+    text-decoration: none;
+
+    `
+    const StyledNav = styled.nav`
+    color: yellow;
+    text-decoration: none;
     `
     return (
-        <header className="Header">
-            <h1><img alt="letterwatlogo" src={logo} width={250} ></img></h1>
-            <nav>
+        <header>
+            <h1><Link to="/"><img alt="letterwatlogo" src={logo} width={250} ></img></Link></h1>
+            <StyledNav>
 
                 <HeaderUl>
                     <HeaderLi><Link to="/">Home</Link></HeaderLi>
@@ -24,7 +30,7 @@ const Header = () => {
                     <HeaderLi><Link to="user">Users</Link></HeaderLi>
                 </HeaderUl>
 
-            </nav>
+            </StyledNav>
         </header>
     )
 }
