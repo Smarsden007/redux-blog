@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectPostById, updatePost, deletePost } from './postsSlice'
 import { useParams, useNavigate } from 'react-router-dom'
-
+import { FormContainer } from '../styles/FormStyles'
 import { selectAllUsers } from "./../users/usersSlice";
 
 const EditPostForm = () => {
@@ -76,6 +76,7 @@ const EditPostForm = () => {
 
     return (
         <section>
+            <FormContainer>
             <h2>Edit Post</h2>
             <form>
                 <label htmlFor="postTitle">Post Title:</label>
@@ -112,6 +113,7 @@ const EditPostForm = () => {
                     Delete Post
                 </button>
             </form>
+            </FormContainer>
         </section>
     )
 }

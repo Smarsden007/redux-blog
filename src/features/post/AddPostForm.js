@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { FormContainer } from '../styles/FormStyles'
 
 import { addNewPost } from "./postsSlice";
 import { selectAllUsers } from "./../users/usersSlice";
@@ -52,6 +53,7 @@ const AddPostForm = () => {
 
     return (
         <section>
+            <FormContainer>
             <h2>Add a New Post</h2>
             <form>
                 <label htmlFor="postTitle">Post Title:</label>
@@ -80,6 +82,7 @@ const AddPostForm = () => {
                     disabled={!canSave}
                 >Save Post</button>
             </form>
+            </FormContainer>
         </section>
     )
 }
