@@ -1,13 +1,17 @@
 import { useSelector } from "react-redux";
 import { selectPostIds, getPostsStatus, getPostsError } from "./postsSlice";
 import PostsExcerpt from "./PostsExcerpt";
+import styled from "styled-components";
 
 const PostsList = () => {
 
     const orderedPostIds = useSelector(selectPostIds)
     const postStatus = useSelector(getPostsStatus);
     const error = useSelector(getPostsError);
-
+    const PostFlex = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    `
     let content;
     if (postStatus === 'loading') {
         content = <p>"Loading..."</p>;
@@ -18,9 +22,9 @@ const PostsList = () => {
     }
 
     return (
-        <section>
+        <PostFlex>
             {content}
-        </section>
+        </PostFlex>
     )
 }
 export default PostsList

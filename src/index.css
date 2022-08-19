@@ -7,7 +7,7 @@
 html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: white;
-  color: #000;
+  color: white;
 }
 
 body {
@@ -68,7 +68,7 @@ section {
 
 article {
   margin: 0.5em;
-  border: 1px solid #000;
+  border: 1px solid yellow;
   border-radius: 10px;
   padding: 1em;
 }
@@ -104,12 +104,12 @@ textarea {
 .postCredit a, 
 .postCredit a:visited {
   margin-right: 0.5rem;
-  color: black;
+  color: yellow;
 }
 
 .postCredit a:hover, 
 .postCredit a:focus {
-  color: hsla(0, 0%, 0%, 0.75);
+  color: hsla(0, 18%, 97%, 0.75);
 }
 
 .excerpt {
@@ -120,7 +120,7 @@ textarea {
   margin: 0 0.25em 0 0;
   background: transparent;
   border: none;
-  color: #000;
+  color: white;
   font-size: 1rem;
 }
 

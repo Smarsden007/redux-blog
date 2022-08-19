@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { FormContainer } from '../styles/FormStyles'
+import { FormContainer } from '../styles/GlobalStyles'
 
 import { addNewPost } from "./postsSlice";
 import { selectAllUsers } from "./../users/usersSlice";

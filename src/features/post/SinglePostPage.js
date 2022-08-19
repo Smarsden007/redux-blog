@@ -4,6 +4,7 @@ import { selectPostById } from './postsSlice'
 import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
 import ReactionButtons from "./ReactionButtons";
+import { FormContainer } from '../styles/GlobalStyles'
 
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -22,7 +23,7 @@ const SinglePostPage = () => {
     }
 
     return (
-        <article>
+        <FormContainer>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
             <p className="postCredit">
@@ -31,7 +32,7 @@ const SinglePostPage = () => {
                 <TimeAgo timestamp={post.date} />
             </p>
             <ReactionButtons post={post} />
-        </article>
+        </FormContainer>
     )
 }
 
