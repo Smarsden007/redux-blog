@@ -3,6 +3,6 @@ import styled from "styled-components";
 
 
 export const HeaderUl = styled.ul`
-padding: 3rem;
+padding: 1rem;
 color: white;
 `

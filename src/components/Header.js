@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const Header = () => {
     const HeaderUl = styled.ul`
-    padding: 7rem;
+    padding-top: 4rem;
     color: white;
     `
     const HeaderLi= styled.li`
@@ -21,7 +21,7 @@ const Header = () => {
     `
     return (
         <header>
-            <h1><Link to="/"><img alt="letterwatlogo" src={logo} width={250} ></img></Link></h1>
+            <h1><Link to="/"><img alt="letterwatlogo" src={logo} width={150} ></img></Link></h1>
             <StyledNav>
 
                 <HeaderUl>
